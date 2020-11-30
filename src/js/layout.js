@@ -3,18 +3,27 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+<<<<<<< HEAD
 
 import { Header } from "./component/Header";
 // import { LoginForm } from "./component/LoginForm";
+=======
+import { Header } from "./component/Header";
+import { LoginForm } from "./component/LoginForm";
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 import { Gallery } from "./views/Gallery";
 import { Action } from "./views/Action";
 import { Sport } from "./views/Sport";
 import { Racing } from "./views/Racing";
 import { Shooter } from "./views/Shooter";
 
+<<<<<<< HEAD
 // import { Login } from "./views/Login";
 import { Signup } from "./views/Signup";
 import { About as LoginPage } from "./views/About";
+=======
+import { Login } from "./views/Login";
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 import injectContext from "./store/appContext";
 import { GalleryProfile } from "./component/GalleryProfile";
 
@@ -34,6 +43,7 @@ const Layout = () => {
 		<div className="container-fluid">
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
+<<<<<<< HEAD
 					<Navbar isAuth={loggedIn} />
 
 					<Switch>
@@ -43,6 +53,15 @@ const Layout = () => {
 							<Footer />
 						</Route>
 
+=======
+					<Navbar />
+					{/* <Header /> */}
+					<Switch>
+						<Route exact path="/">
+							<Home />
+							<Footer />
+						</Route>
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 						<Route exact path="/Gallery">
 							<Gallery />
 							<Footer />
@@ -52,6 +71,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/Sport">
 							<Sport />
+<<<<<<< HEAD
 						</Route>
 						<Route exact path="/Racing">
 							<Racing />
@@ -67,6 +87,22 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/About">
 							<LoginPage />
+=======
+						</Route>
+						<Route exact path="/Racing">
+							<Racing />
+						</Route>
+						<Route exact path="/Shooter">
+							<Shooter />
+						</Route>
+						<Route exact path="/GalleryProfile/:id">
+							{/* <Header /> */}
+							<GalleryProfile />
+						</Route>
+
+						<Route exact path="/About">
+							<Login />
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

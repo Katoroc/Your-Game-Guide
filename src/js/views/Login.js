@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { Footer } from "../component/footer.js";
 //import PropTypes from "prop-types";
 import { LoginForm } from "../component/LoginForm.js";
+<<<<<<< HEAD
 import { Redirect } from "react-router-dom";
+=======
+
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 import "../../styles/home.scss";
 
 export function Login() {
@@ -16,7 +20,10 @@ export function Login() {
 
 	const [user, setUser] = useState({ name: "", email: "" });
 	const [error, setError] = useState("");
+<<<<<<< HEAD
 	const [redirect, setRedirect] = useState(false);
+=======
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 
 	const Login = details => {
 		console.log(details);
@@ -28,9 +35,14 @@ export function Login() {
 				name: details.name,
 				email: details.email
 			});
+<<<<<<< HEAD
 			setRedirect(true);
 		} else {
 			// console.log("Details do not match!");
+=======
+		} else {
+			console.log("Details do not match!");
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 			setError("Details do not match!");
 		}
 	};
@@ -38,12 +50,15 @@ export function Login() {
 	const Logout = () => {
 		setUser({ name: "", email: "" });
 	};
+<<<<<<< HEAD
 	let renderRedirect = () => {
 		if (redirect) {
 			return <Redirect to="/Gallery" />;
 		}
 	};
 
+=======
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 	return (
 		<div className="container">
 			{/* <Header /> */}
@@ -59,7 +74,10 @@ export function Login() {
 					<LoginForm Login={Login} error={error} />
 				)}
 			</div>
+<<<<<<< HEAD
 			{renderRedirect()}
+=======
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 			<Footer />
 		</div>
 	);

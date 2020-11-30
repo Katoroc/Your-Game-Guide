@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 import "../../styles/home.scss";
 import { Tabs, Tab } from "react-bootstrap";
 
@@ -9,8 +12,12 @@ export const Home = () => (
 		<div className="container">
 			<br />
 			<br />
+<<<<<<< HEAD
 
 			<ul className="nav justify-content-center">
+=======
+			<div className="buttons text-center">
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				<Link
 					className=" fill"
 					to="/Action/"
@@ -23,7 +30,11 @@ export const Home = () => (
 						margin: "0.5em",
 						padding: "1em 2em"
 					}}>
+<<<<<<< HEAD
 					<h4>Action</h4>
+=======
+					Action
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				</Link>
 
 				<Link
@@ -38,7 +49,11 @@ export const Home = () => (
 						margin: "0.5em",
 						padding: "1em 2em"
 					}}>
+<<<<<<< HEAD
 					<h4>Sports</h4>
+=======
+					Sports
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				</Link>
 
 				<Link
@@ -53,7 +68,11 @@ export const Home = () => (
 						margin: "0.5em",
 						padding: "1em 2em"
 					}}>
+<<<<<<< HEAD
 					<h4>Racing</h4>
+=======
+					Racing
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				</Link>
 
 				<Link
@@ -68,7 +87,11 @@ export const Home = () => (
 						margin: "0.5em",
 						padding: "1em 2em"
 					}}>
+<<<<<<< HEAD
 					<h4>Shooter</h4>
+=======
+					Shooter
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				</Link>
 				<Link
 					className="offset"
@@ -82,6 +105,7 @@ export const Home = () => (
 						margin: "0.5em",
 						padding: "1em 2em"
 					}}>
+<<<<<<< HEAD
 					<h4>All Games</h4>
 				</Link>
 			</ul>
@@ -216,5 +240,44 @@ export const Home = () => (
 				</Tab>
 			</Tabs>
 		</div>
+=======
+					All Games
+				</Link>
+			</div>
+		</div>
+		<div className="text-center mt-5" style={{ color: "white" }}>
+			<div className="wrapper">
+				<h1>HOME PAGE</h1>
+				<iframe
+					src="https://www.youtube.com/embed/CQKvhoe15M4"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					style={{ width: "40%", height: "300px", border: "0" }}
+					allowFullScreen
+				/>
+			</div>
+			<div className="wrapper">
+				<h1>HOME PAGE</h1>
+				<iframe
+					src="https://www.youtube.com/embed/RkC0l4iekYo"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					style={{ width: "40%", height: "300px", border: "0" }}
+					allowFullScreen
+				/>
+			</div>
+			<div className="wrapper">
+				<h1>HOME PAGE</h1>
+				<iframe
+					src="https://www.youtube.com/embed/W78jqH6skjI?start=10"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					style={{ width: "40%", height: "300px", border: "0" }}
+					allowFullScreen
+				/>
+			</div>
+		</div>
+		<br />
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 	</div>
 );

@@ -10,8 +10,12 @@ export function GalleryProfile() {
 	let history = useHistory();
 
 	let gallery = actions.getGallery(params.id);
+<<<<<<< HEAD
 	// console.log(gallery);
 	let content = "Game Not Found";
+=======
+	console.log(gallery);
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 
 	return (
 		<div className="container">
@@ -30,6 +34,7 @@ export function GalleryProfile() {
 					/>
 					<div className="row">
 						{/* margin: "auto ",  */}
+<<<<<<< HEAD
 						<div
 							className="card-body col-6"
 							style={{
@@ -39,10 +44,14 @@ export function GalleryProfile() {
 								placeContent: "space-between",
 								justifyContent: "center"
 							}}>
+=======
+						<div className="card-body col-6" style={{ color: "white" }}>
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 							<h5 className="card-title">
 								<strong>{gallery.name}</strong>
 							</h5>
 							<p className="card-text">
+<<<<<<< HEAD
 								Console:
 								{gallery.console}
 							</p>
@@ -74,10 +83,43 @@ export function GalleryProfile() {
 							}}
 							allowFullScreen
 						/>
+=======
+								<strong>
+									Console:
+									{gallery.console}
+								</strong>{" "}
+							</p>
+							<p className="card-text">
+								<strong>
+									Genre:
+									{gallery.genre}
+								</strong>{" "}
+							</p>
+							<p className="card-text">
+								<strong>Publisher:</strong> {gallery.publisher}
+							</p>
+							<p className="card-text">
+								<strong>Rating:</strong> {gallery.ratings}
+							</p>
+							<p className="card-text">{gallery.desc}</p>
+						</div>
+						<div className="col-6">
+							<iframe
+								src={gallery.video}
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								style={{ width: 500, height: 250 }}
+								allowFullScreen
+							/>
+						</div>
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 					</div>
 				</div>
 			</div>
 		</div>
 	);
+<<<<<<< HEAD
 	return <div className="text-center mt-5">{content}</div>;
+=======
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 }

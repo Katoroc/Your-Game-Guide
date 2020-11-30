@@ -11,6 +11,7 @@ export function Header(props) {
 	let history = useHistory();
 
 	let gallery = actions.getGallery(params.id);
+<<<<<<< HEAD
 	// console.log(gallery);
 	return (
 		<div className="container">
@@ -21,6 +22,13 @@ export function Header(props) {
 					paragraph, text paragraph, text paragraph, text paragraph, text paragraph,text paragraph, text
 					paragraph, text paragraph, text paragraph,{" "}
 				</h4>
+=======
+	console.log(gallery);
+	return (
+		<div className="container">
+			<div className="jumbotron jumbotron-fluid" style={{ margin: 0, backgroundColor: "#047aed" }}>
+				{/* <img src={gallery.photo} className="card-img-top" alt="..." /> */}
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 			</div>
 		</div>
 	);

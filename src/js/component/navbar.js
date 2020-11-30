@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 // import IMG from "../../img/IMG.png";
 
 export const Navbar = props => {
@@ -27,10 +28,18 @@ export const Navbar = props => {
 
 	return (
 		<div className="container-fluid">
+=======
+import IMG from "../../img/IMG.png";
+
+export const Navbar = () => {
+	return (
+		<div className="container">
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 			<nav
 				className="navbar navbar-expand-lg "
 				style={{ backgroundColor: "#edb704", textShadow: "2px 2px 5px black" }}>
 				<Link className="navbar-brand" style={{ width: "30%" }} to="/">
+<<<<<<< HEAD
 					{/* <img src={IMG} className="card-img" alt="..." /> */}
 					<div className="row">
 						<h2>YOUR </h2>
@@ -39,6 +48,9 @@ export const Navbar = props => {
 
 						<h2>GUIDE</h2>
 					</div>
+=======
+					<img src={IMG} className="card-img" alt="..." />
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 				</Link>
 				<button
 					className="navbar-toggler"
@@ -63,6 +75,7 @@ export const Navbar = props => {
 							</Link>
 						</li>
 						<li className="nav-item">
+<<<<<<< HEAD
 							<Link className="nav-link" to="/Signup">
 								<i className="fas fa-user-plus fa-2x" />
 							</Link>
@@ -73,6 +86,12 @@ export const Navbar = props => {
 								<button>Login</button>
 							</Link> */}
 						</li>
+=======
+							<Link className="nav-link" to="/About">
+								<i className="fas fa-sign-in-alt fa-2x" />
+							</Link>
+						</li>
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
 					</ul>
 				</div>
 			</nav>

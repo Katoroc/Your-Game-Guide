@@ -6,6 +6,7 @@ import "../../styles/home.scss";
 
 export function Racing() {
 	const { store, actions } = useContext(Context);
+<<<<<<< HEAD
 	let test = "";
 	let isAuth = sessionStorage.getItem("loggedIn");
 
@@ -32,3 +33,27 @@ export function Racing() {
 	}
 	return <div className="col text-center">{test}</div>;
 }
+=======
+	console.log(actions.getRacings());
+
+	// if (store.gallerys.length == 0) {
+	// 	test = "nothing to show";
+	// } else {
+	// 	test = (
+	return (
+		<div className="container">
+			<div className="text-center mt-5">
+				<h1>Racing Games</h1>
+				<div className="row">
+					{store.racings.map((racing, index) => (
+						<RacingCard key={index} index={index} racing={racing} />
+					))}
+				</div>
+			</div>
+			<br />
+		</div>
+	);
+}
+// return <div className="col text-center">{test}</div>;
+// }
+>>>>>>> f81d901eedc7b6eac7e5949d052d2fdcaa6d0f32
